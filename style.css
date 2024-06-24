@@ -1,0 +1,82 @@
+:root {
+    box-sizing: border-box;
+    /* variabelen */
+        --primary-color-100: #D8DAD3;
+        --primary-color-800: #153C51;
+        --touch-color-300: #FB5607;
+        --touch-color-400: #00AF54;
+        --secondary-color-600: #8F2D56;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color-800);
+}
+h1, p {
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+button {
+    display: block;
+    background-color: transparent;
+    border: 2px solid var(--touch-color-300);
+    color: var(--touch-color-300);
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    min-width: 200px;
+    width: max-content;
+    margin: 0px auto;
+}
+button:hover {
+    background-color: var(--touch-color-300);
+    color: #ffffff;
+    cursor: pointer;
+}
+.clock {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--secondary-color-600);
+    border: 10px solid var(--secondary-color-600);
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 10px auto;
+}
+#countdown {
+    display: block;
+    margin: auto;
+    width: max-content;
+
+}
+#wordCount,
+#charCount {
+    font-weight: 600;
+    color: var(--touch-color-400);
+}
+
+#objectiveWord {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--touch-color-300);
+}
+input[type="text"] {
+    display: block;
+    border: none;
+    border-bottom: 2px solid var(--secondary-color-600);
+    width: 80%;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--primary-color-800);
+}
+input[type="text"]:focus {
+    outline: none;
+}
+.hidden {
+    display: none;
+}
